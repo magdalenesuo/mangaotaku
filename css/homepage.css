@@ -1,0 +1,200 @@
+
+
+html,
+body {
+  font-size: 15px;
+  height: 100%;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+  color: #555555;
+  text-rendering: optimizeLegibility;
+  min-width: 320px;
+}
+
+
+.ui.header {
+  font-family: Geneva, Tahoma, cursive, sans-serif;
+}
+
+.ui.header,
+h1,
+h2 {
+  font-weight: normal ;
+}
+
+h1.ui.header {
+  font-size: 2.6em;
+}
+
+h4.ui.header,
+h5.ui.header,
+.ui.icon.header {
+font-weight: bold ;
+}
+
+.ui.button {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+p a {
+  font-weight: bold;
+}
+
+
+.menu .right.menu > .mobile.item {
+  display: none;
+  color:blue;
+}
+
+.ui.page.grid.segment {
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+}
+
+.masthead.segment {
+  background-image: url(../images/ddd.jpg);
+  background-size: cover;
+  margin: 0em;
+  padding-top: 4rem;
+  overflow: hidden;
+  
+  
+}
+
+.masthead.segment .column {
+  position: relative;
+}
+
+.masthead.segment .information {
+  margin: 3em 1em 1em 280px;
+}
+
+
+.masthead.segment .scroll{
+  width: 60px;
+  height: 60px;
+  background-color: #F4A460;
+  border-radius :60%;
+  text-align: center;
+  bottom:0px;
+  margin-left: 100;
+  float:right;
+  position:fixed;
+  right:0px;
+ font-size: 0.9em;
+ 
+}
+
+
+.masthead.segment .information p {
+  max-width: 800px;
+  margin: 0em 0px 2em 0em;
+  font-size: 1.5em;
+}
+
+.masthead.segment h1.ui.header .sub {
+  font-size: 0.7em;
+}
+
+.masthead.segment .image {
+  position: absolute;
+  left: 0%;
+  bottom: -110px;
+
+}
+
+.overview .divided.grid .header + p {
+  min-height: 100px;
+}
+
+.ui.shape .icon,
+.link.list .icon {
+  margin: 0em;
+  padding: 0em;
+}
+
+.ui.cube.shape .side {
+  background-color: transparent;
+}
+
+
+/* for mobile*/
+
+@media only screen and (max-width : 768px) {
+  .ui.page.grid.segment {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .menu .right.menu > .item {
+    display: none;
+
+
+  }
+  .menu .right.menu > .mobile.item {
+    display: block;
+  }
+
+  h1.ui.header {
+    font-size: 1.5em;
+  }
+
+  .masthead.segment {
+    background-size: auto;
+  }
+
+  .masthead.segment .information {
+    margin-left: 190px;
+  }
+
+  .masthead.segment .image {
+    bottom: -65px;
+    width: 150px;
+  }
+
+  .masthead.segment .button {
+    font-size: 1rem;
+  }
+
+  .overview .divided.grid .header .icon {
+    font-size: 1.5em;
+  }
+
+  .overview .divided.grid .header + p {
+    min-height: 0px;
+  }
+
+  .masthead.segment .column {
+    font-size: 0.7rem;
+  }
+
+  .masthead.segment .column p {
+    display: none;
+  }
+  .selection.list .right.floated {
+    display: none;
+
+  }
+}
+
+@media only screen and (max-width : 1000px) {
+
+}
