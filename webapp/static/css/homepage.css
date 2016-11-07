@@ -15,7 +15,9 @@ body {
   text-rendering: optimizeLegibility;
   min-width: 320px;
 }
-
+.inverted.teal.page.grid.segment{
+background-image: url(../images/ggg.jpg) }}
+}
 
 .ui.header {
   font-family: Geneva, Tahoma, cursive, sans-serif;

@@ -11,12 +11,13 @@
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" type="text/css" href="css/semantic.css">
-  <link rel="stylesheet" type="text/css" href="css/homepage.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/semantic.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/homepage.css') }}">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-  <script src="js/semantic.js"></script>
-  <script src="js/homepage.js"></script>
+
+  <script type=text/javascript src="{{url_for('static', filename='js/semantic.js') }}"></script>
+  <script type=text/javascript src="{{url_for('static', filename='js/homepage.js') }}"></script>
 
 </head>
 <body id="home">
@@ -39,7 +40,7 @@
           <a class="item">Sign-in</a>
         </div>
       </div>
-      <img src="images/pika.gif" class="ui medium image" >
+      <img src="{{ url_for('static', filename='images/pika.gif') }}" class="ui medium image";>
       <div class="ui hidden transition information">
         <h1 class="ui inverted header">
           Welcome to MangaOtaku!
@@ -58,7 +59,7 @@
 
 
 <div class="form" style="float:center; height:60%; width:60%; align-center; padding-top:5rem; padding-bottom: 5rem; padding-left:10rem; ">
-<form class="ui form">
+<form class="ui form" method="post">
   <div class="field">
     <label><B>URL</B></label>
     <input type="text" name="url" placeholder="Url">
@@ -76,20 +77,19 @@
   <button class="ui button" type="submit">Submit</button>
 </form>
 </div>
-
-
-
-
     </div>
   </div>
-  <div class="ui inverted teal page grid segment" style="background-image: url(images/Green-Gradient-HD-Wallpaper-620x349.jpg)">
+
+  <h1>'{{ url }}' is the url and number of pages is: {{ pages }}</h1>
+
+  <div class="ui inverted teal page grid segment">
     <div class="ten wide column">
       <div class="ui three column stackable grid">
         <div class="column">
           <div class="ui header">To Know</div>
           <div class="ui inverted link list">
-            <a class="item">About-Us</a>
-            <a class="item">Team</a>
+            <a class="item" href="about" >About-Us</a>
+            <a class="item" href="contact">Team</a>
             <a class="item">Mangaka</a>
           </div>
         </div>
