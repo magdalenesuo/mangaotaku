@@ -9,7 +9,7 @@ from StringIO import StringIO
 from requests.exceptions import ConnectionError
 
 
-proxy = "http://<username>:<password>@<host>:<port>"
+proxy = "http://iec2014020:Medo@1995@172.31.1.4:8080"
 proxyDict = {
               "http": proxy,
               "https": proxy,
@@ -88,7 +88,7 @@ def linkData(base_url):
 
 def main(base_url, base_path, total_img):
     base_host = re.split(r"/", base_url)[0] + "//" + re.split(r"/", base_url)[2]
-    base_path = re.split(r"/", base_url)[3] + "_"+re.split(r"/", base_url)[4]
+    #base_path = re.split(r"/", base_url)[3] + "_"+re.split(r"/", base_url)[4]
 
     #print base_host
     image_title = 0
