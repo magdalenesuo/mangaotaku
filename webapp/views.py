@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import flask
+import mangaScrape
 from webapp import app
 
 # importing application wide parameters and global variables that have been
@@ -14,6 +15,7 @@ def webapp():
 	if flask.request.method=='POST':
 		url = flask.request.form.get('url')
 		pages = flask.request.form.get('pages')
+		mangaScrape.main(url, 'abc', int(pages))
 	return flask.render_template('index.html', url=url, 
 					pages=pages)
 @app.route('/about/')
