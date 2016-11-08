@@ -9,7 +9,7 @@ from StringIO import StringIO
 from requests.exceptions import ConnectionError
 
 
-proxy = "http://iec2014020:Medo@1995@172.31.1.4:8080"
+proxy = "http://<username>:<password>@<host>:<port>"
 proxyDict = {
               "http": proxy,
               "https": proxy,
