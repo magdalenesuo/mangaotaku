@@ -77,7 +77,10 @@
     </div>
   </div>
   <button class="ui button" type="submit">Submit</button>
-  <a href="{{ url_for('download', filename=filename)}}" class="ui button" type="download" style="float:right">Download</a>
+	{% if filename != ".zip" %}
+     		<a href="{{ url_for('download', filename=filename)}}" class="ui button" type="download" style="float:right">Download</a>
+	{% endif %}
+
 </form>
 </div>
     </div>
