@@ -44,6 +44,7 @@ font-weight: bold ;
   text-decoration: none;
 }
 
+
 a {
   color: black;
   text-decoration: none;
@@ -175,6 +176,7 @@ p a {
   .masthead.segment .button {
     font-size: 1rem;
   }
+
 
   .overview .divided.grid .header .icon {
     font-size: 1.5em;
