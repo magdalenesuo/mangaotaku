@@ -2,7 +2,7 @@
 # coding: utf-8
 
 import flask
-import mangaScrape
+import manga_scrape
 from webapp import app
 import re
 import shutil
@@ -21,7 +21,7 @@ def webapp():
 		url = flask.request.form.get('url')
 		pages = flask.request.form.get('pages')
 		folder=re.split(r"/", url)[3] + "_"+re.split(r"/", url)[4]
-		mangaScrape.main(url, folder, int(pages))
+		manga_scrape.main(url, folder, int(pages))
 		os.path.dirname(os.path.abspath(__file__))
 		directory_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../" + folder)
 		shutil.make_archive(folder, 'zip', directory_name)
